@@ -1,7 +1,6 @@
 .contanier {
     width: 100%;
     max-width: 1180px;
-    margin: 0 auto;
 }
 
 li {
@@ -249,9 +248,34 @@ body {
     color: #606176;
 }
 
-
-
+.transform-right iframe {
+    left: -50px;
+    position: absolute;
+    top: 110px;
+    width: 530px;
+    height: 360px;
+}
+.transform-right .tbadge {
+    bottom: -80px;
+    position: absolute
+}
+@media (min-width: 990px) {
+    .col-3-5 {
+        width: 30% !important;
+    }
+}
 @media(max-width:990px) {
+    .transform-right .tbadge {
+        bottom: 0;
+        position: relative
+    }
+    
+    .transform-right iframe {
+        left: 0;
+        top: 0;
+        width: 100%;
+        position: relative;
+    }
     .hero-bar-marka img {
         width: 25%;
     }
@@ -272,8 +296,7 @@ body {
     }
 
     .card-img img {
-        width: 200px;
-        height: 400px;
+        width: 100%;
     }
 
     .transform-right {
